@@ -1,0 +1,7 @@
+Simple ARP scan tool built in rust
+
+To run simply build the file then run it by running ./arpscan-rs
+
+It will scan and then print out the ip and mac address and manufacturer of the files.
+Ensure ./arpscan-rs and oui.txt are in the same folder otherwise wont locate the information appropriately
+
