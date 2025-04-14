@@ -1,5 +1,5 @@
 [package]
-name = "arp_scan"
+name = "arpscan-rs"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,6 +7,12 @@ edition = "2021"
 pnet = "0.34.0"
 rand = "0.8.5"
 lazy_static = "1.4.0"
+chrono = "0.4"  # For timestamp formatting
+users = "0.11"
+dirs = "5.0"
+
+[target.'cfg(unix)'.dependencies]
+nix = { version = "0.27", features = ["user", "fs"] }  # Enable "user" and "fs" for chown
 
 [build-dependencies]
 # No additional dependencies needed for build.rs
